@@ -1,0 +1,263 @@
+
+ html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ol,
+  ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol,
+  ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  textarea,
+  textarea:hover,
+  textarea:focus,
+  input[type="button"],
+  input[type="button"]:hover,
+  input[type="button"]:focus {
+    background: inherit;
+    border:  none;
+    color:  inherit;
+    font: inherit;
+    outline: none;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  @font-face {
+    font-family:  'Inter';
+    src: url('./fonts/Inter-Light.ttf');
+  }
+  
+  @font-face {
+    font-family:  'Inter';
+    src: url('./fonts/Inter-Bold.ttf');
+    font-weight: bold;
+  }
+  
+  html {
+    font-family:  'Inter', sans-serif;
+  }
+  
+  body {
+    background-color: #f3f5fc;
+  }
+  
+  .principal {
+    min-height: 75vh;
+  }
+  
+  .logo {
+    height: 2.5rem;
+  }
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  .d-none {
+    display: none;
+  }
+  
+  .column {
+    flex-direction: column;
+  }
+  
+  .row {
+    flex-direction: row;
+  }
+  
+  .grow {
+    flex-grow: 1;
+  }
+  
+  #entrada {
+    text-align: center;
+    font-size: 2rem;
+    max-width: 100%;
+    margin: 5rem;
+    color: #0a3871;
+  }
+  
+  ::placeholder {
+    color: #7387a4;
+
+  }
+  
+  .controles {
+    padding: 1.5rem;
+  }
+  
+  header {
+    margin-top: 1.5rem;
+    padding-left: 1rem;
+  }
+  
+  .advertencia {
+    height: 2rem;
+    font-size: 1.2rem;
+    justify-content: left;
+  }
+  
+  input.button {
+    color: #0A3871;
+    border: solid 1px #0A3871;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    margin: 0.5rem 0px;
+    cursor: pointer;
+  }
+  
+  input.button:hover,
+  input.button:focus {
+    background-color: #0A3871;
+    color: #fff;
+    border: solid 1px #000;
+  }
+  
+  .barra-lateral {
+    background-color: #fff;
+    border: solid 1px #ddd;
+    border-radius: 1rem;
+    margin: 1rem;
+    margin-top:5rem;
+    padding: 1rem;
+    min-height: calc(25vh - 2rem);
+    color: #495057;
+  }
+  
+  .my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  .info {
+    text-align: center;
+  }
+  
+  .icon-info {
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+    background: url(Images/Advertencia.png);
+    margin: 0px 1rem;
+  }
+  
+  .info-txt strong{
+    color: #343A40;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .barra-lateral {
+    position: relative;
+  }
+  
+  .barra-lateral .button {
+    position: absolute;
+    visibility: hidden;
+    width: 90%;
+    height: 50px;
+    top: 90.5%;
+    right: 0.5rem;
+  }
+  
+  .barra-lateral.salidas .button {
+    visibility: visible;
+  }
+  
+  .barra-lateral.salidas .info {
+    display:  none;
+  }
+  
+  #salida {
+    font-size: 1.5rem;
+    max-width: 100%;
+    word-break: break-all;
+    overflow-y: auto;
+  }
+
+  @media only screen and (min-width: 375px) {
+    .sm-flex {
+      display:  flex;
+    }
+  
+    .sm-column {
+      flex-direction: column;
+    }
+  
+    .sm-row {
+      flex-direction: row;
+    }
+  
+    .sm-grow {
+      flex-grow: 1;
+    }
+  
+    input.button {
+      border-radius: 1rem;
+      margin: 0px 1rem;
+    }
+  
+  }
+
+  @media only screen and (min-width: 768px) {
+    .md-flex {
+      display:  flex;
+    }
+  
+    .md-block {
+      display: block;
+    }
+  
+    .md-column {
+      flex-direction: column;
+    }
+  
+    .md-row {
+      flex-direction: row;
+    }
+  
+    .md-grow {
+      flex-grow: 1;
+    }
+  
+    .principal {
+      width: 70%;
+    }
+  
+    .barra-lateral {
+      width: 30%;
+    }
+  
+    body {
+      height: 100vh;
+    }
+  }
